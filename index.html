@@ -18,8 +18,8 @@ about: 'about.html'
         <div class="main-header-content inner">
             <h1 class="page-title">{{ site.name }}</h1>
             <h2 class="page-description">
-                {% if site.description %} {{ site.description }}. {% endif %}
-                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
+                {% if site.description %} {{ site.description }} {% endif %}
+                {% if page.about %}</br><!--<a href='{{ site.baseurl }}{{ page.about }}'><span style="color: #2f2f2f;"><b>About me</b></span></a>--> {% endif %}
             </h2>
         </div>
     </div>
