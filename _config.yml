@@ -1,13 +1,13 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: JstHack BLog
+description: UI & UX | Product Design | Front-End Dev
+meta_description: "Cosmin Haims's personal blog about product design, ui, user experience, and fron-end development. "
 
 markdown: kramdown
 highlighter: pygments
-logo: false
+logo: true
 paginate: 15
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
+domain_name: 'http://jsthack.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
 plugins: [jekyll-paginate]
 
