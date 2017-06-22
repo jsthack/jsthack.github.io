@@ -1,0 +1,58 @@
+---
+layout: default
+author: Cosmin Haims
+title: Home
+cover: false
+about: 'about.html'
+---
+
+<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+   <!--======================= MOBILE MENU DROPDOWN ========================= -->
+   <div class="mobile">
+      <label class="mobile__label" for="checkbox">
+         <div class="mobile__label__content">
+            <span class="label__line"></span>
+            <span class="label__line"></span>
+         </div>
+         <div class="mobile__label__content">
+            <span class="label__line"></span>
+            <span class="label__line"></span>
+         </div>
+         <div class="mobile__label__content">
+            <span class="label__line"></span>
+            <span class="label__line"></span>
+         </div>
+      </label><!--mobile__label-->
+      <input class="mobile__input" type="checkbox" id="checkbox" />
+      <nav class="mobile__nav">
+         <ul>
+            <li class="nav__item"><a href="https://jsthack.github.io">Home</a></li>
+            <li class="nav__item"><a href="about.html">About</a></li>
+            <li class="nav__item"><a href="#">Experience</a></li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+         </ul>
+      </nav><!--mobile__nav-->
+   </div><!--mobile-->
+<!--========================================================================= -->
+   <div class="vertical">
+      <div class="main-header-content inner">
+         <h1 class="page-title">{{ site.name }}</h1>
+         <h2 class="page-description">
+            {% if site.description %} {{ site.description }} {% endif %}
+            {% if page.about %}</br><!--<a href='{{ site.baseurl }}{{ page.about }}'><span style="color: #2f2f2f;"><b>About me</b></span></a>--> {% endif %}
+         </h2>
+      </div>
+   </div>
+   <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+<!--============================= PAGE CONTECT ============================= -->
+<main id="content" class="content" role="main">
+   <article class="aboutContainer">
+      <h1 class="post-title">About Me</h1>
+         <section class="post-content">
+         Hi guys, thanks for joining me over here on my blog. My name is Cosmin aka Cos, and I'm from the SF Bay Area. I'm a Product Designer, and sometimes pretend that I'm a Front End Developer. I work at Keysight Technologies, and I am Product Design lead on my team. I wasn't always super into ui, ux, and web development. I started my "design life" as a print designer, and I was fascinated with identity design. Around my Senior year in college, I somehow got bit by the product design bug. One of my good friends at the time was a database engineer, and an amazing one at that. He really helped get my head around technologies like Git and the command line. he also gave me a great understanding of web development as a whole, and how the server side interacts with the front end. From then on I completely fell in love with the world of product design, and learning different web technologies. I think I have a unique advantage as a product designer. Since I started as a traditional visual designer, I learned and developed great design fundamentals, which I think is lost on a lot of people in the web dev world.
+
+         Well that's enough about me, enjoy my blog. Feel free to reach out if you have any questions, or just want to say hi. Also remember to follow me on Twitter, Github, and Dribble. Links Below.
+         </section>
+   </article>
+</main>
