@@ -7,15 +7,46 @@ about: 'about.html'
 ---
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <nav class="main-nav overlay clearfix">
-            {% if page.logo %}
-                <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="{{ page.logo }}" alt="Blog Logo" />
-                </a>
-            {% endif %}
-        <!--<a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>-->
-    </nav>
-    <div class="vertical">
+   <!--======================= MOBILE MENU DROPDOWN ========================= -->
+   <div class="mobile">
+      <label class="mobile__label" for="checkbox">
+         <div class="mobile__label__content">
+            <span class="label__line"></span>
+            <span class="label__line"></span>
+         </div>
+         <div class="mobile__label__content">
+            <span class="label__line"></span>
+            <span class="label__line"></span>
+         </div>
+         <div class="mobile__label__content">
+            <span class="label__line"></span>
+            <span class="label__line"></span>
+         </div>
+      </label><!--mobile__label-->
+      <input class="mobile__input" type="checkbox" id="checkbox" />
+      <nav class="mobile__nav">
+         <ul>
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#">Code</a></li>
+            <li class="nav__item"><a href="#">Download</a></li>
+            <li class="nav__item"><a href="#">Features</a></li>
+            <li class="nav__item"><a href="#">Community</a></li>
+            <li class="nav__item"><a href="#">Blog</a></li>
+         </ul>
+      </nav><!--mobile__nav-->
+   </div><!--mobile-->
+   <!-- ===================================================================== -->
+      <!--
+      <nav class="main-nav overlay clearfix">
+         {% if page.logo %}
+            <a class="blog-logo" href="{{ site.baseurl }}">
+               <img src="{{ page.logo }}" alt="Blog Logo" />
+            </a>
+         {% endif %}
+        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>
+      </nav>
+      -->
+   <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">{{ site.name }}</h1>
             <h2 class="page-description">

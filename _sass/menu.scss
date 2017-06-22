@@ -1,116 +1,122 @@
+/*VARIABLES*/
 /*Colors*/
-$white:      #fff;
-$bkg:        #493458;
-/*Fonts*/
-
+$white: #fff;
+$bkg: #493458;
 /*MIXINS*/
-#noMargin{
-  margin:   0px;
-  padding:  0px;
+@mixin noMargin {
+   margin: 0;
+   padding: 0;
 }
-#lineStyle{
-  background-color: $white;
-  width:24px;
-  height:2px;
+@mixin lineStyle {
+   background-color: $white;
+   width: 24px;
+   height: 2px;
 }
-
 /*----- GENERAL -*/
-
-ul,li{
-
-  list-style:none;
+li,
+ul {
+   @include noMargin;
+   list-style: none;
 }
-
 /*-----------------------------------------------
 MOBILE
 Content of mobile menu
 -----------------------------------------------*/
-.mobile{
-  padding:40px;
+.mobile {
+   //padding:40px;
+   margin: 21px 0 0 21px;
 }
-
 /*-----------------------------------------------
 LABEL
 -----------------------------------------------*/
-.mobile__label{
-  border:solid 2px white;
-  display:inline-block;
-  overflow:hidden;
-  padding:12px 9px;
-  width:25px;
-  white-space: nowrap;
-  &:hover{
-    cursor:pointer;
-    /*ANIMAION POSITION ON HOVER*/
-    .label__line{
-      margin-left:0px;
-    }
-    /*ANIMATION DELAY*/
-    :nth-child(2){
-      .label__line{
-        transition-delay:.1s;
-      }
-    }
-    :nth-child(3){
-      .label__line{
-        transition-delay:.2s;
-      }
-    }
-  }
-}
-  /*LINES CONTENT*/
-  .mobile__label__content{
-    font-size: 0;
-    line-height: 0;
-    height: 2px;
-    margin-bottom: 5px;
-    &:last-child{
-      margin-bottom: 0px;
-    }
-  }
-  /*WHITE LINES*/
-  .label__line{
-    display:inline-block;
-    margin-left: -33px;
-    margin-right: 43px;
-    /*LINES ANIMATION*/
-    transition: margin-left .2s linear;
-  }
+.mobile__label {
+   border: solid 2px $white;
+   display: inline-block;
+   overflow: hidden;
+   padding: 12px 9px;
+   width: 25px;
+   white-space: nowrap;
 
+   &:hover {
+      cursor: pointer;
+      /*ANIMAION POSITION ON HOVER*/
+      .label__line {
+         margin-left: 0;
+      }
+      /*ANIMATION DELAY*/
+      :nth-child(2) {
+         .label__line {
+            transition-delay: 0.1s;
+         }
+      }
+
+      :nth-child(3) {
+         .label__line {
+            transition-delay: 0.2s;
+         }
+      }
+   }
+}
+/*LINES CONTENT*/
+.mobile__label__content {
+   font-size: 0;
+   line-height: 0;
+   height: 2px;
+   margin-bottom: 5px;
+
+   &:last-child {
+      margin-bottom: 0;
+   }
+}
+/*WHITE LINES*/
+.label__line {
+   @include lineStyle;
+   display: inline-block;
+   margin-left: -33px;
+   margin-right: 43px;
+   /*LINES ANIMATION*/
+   transition: margin-left 0.2s linear;
+}
 /*-----------------------------------------------
 INPUT
 -----------------------------------------------*/
-.mobile__input{
-    display:none;
+.mobile__input {
+   display: none;
 }
-
 /*-----------------------------------------------
 NAV
 -----------------------------------------------*/
-.mobile__nav{
-  margin-top: 10px;
-  max-height:0;
-  max-width:0;
-  overflow: hidden;
-  transition: max-height 1s linear, max-width .8s linear;
+.mobile__nav {
+   //margin-top: 10px;
+   text-align: left;
+   //margin-left: 28px;
+   //padding-left: 11px;
+   max-height: 0;
+   max-width: 0;
+   overflow: hidden;
+   transition: max-height 1s linear, max-width 0.8s linear;
 }
-  .nav__item{
-    white-space: nowrap;
-    a{
-      text-decoration:none;
-      display:block;
-      padding: 5px 0px;
-      color:$white;
-      &:after{
-        display:block;
-        width:15px;
-        height:2px;
-        background-color:$white;
-        content:'';
+
+.nav__item {
+   white-space: nowrap;
+
+   a {
+      text-decoration: none;
+      display: block;
+      padding: 5px 0;
+      color: $white;
+
+      &:after {
+         display: block;
+         width: 15px;
+         height: 2px;
+         background-color: $white;
+         content: '';
       }
-    }
-  }
-.mobile__input:checked+.mobile__nav{
-  max-width:150px;
-  max-height:200px;
+   }
+}
+
+.mobile__input:checked+.mobile__nav {
+   max-width: 150px;
+   max-height: 200px;
 }
