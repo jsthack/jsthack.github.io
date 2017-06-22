@@ -169,3 +169,26 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 380px) {
+	.no-cover {
+		.page-title {
+			font-size: 52px;
+		}
+	}
+	.no-cover .page-description {
+   	font-size: 16.6px;
+	}
+	.main-header {
+		.inner {
+			top: -42px;
+		}
+	}
+	.main-header.no-cover {
+   	height: 18%;
+		min-height: 0;
+	}
+	.inner {
+		margin: 0 auto;
+	}
+}
