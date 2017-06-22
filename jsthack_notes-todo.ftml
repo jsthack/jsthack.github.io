@@ -1,6 +1,6 @@
 <!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta name="expandedItems" content="XJclhG8n7" />
+    <meta name="expandedItems" content="XJclhG8n7 QkfMnfI2Q" />
     <meta charset="UTF-8" />
   </head>
   <body>
@@ -18,30 +18,41 @@
         <p><i><b>LANDING PAGE </b>--- #active</i></p>
         <ul>
           <li id="XymfzeTTX">
-            <p>Design landing header</p>
+            <p>Design landing header.</p>
           </li>
           <li id="m1INfx6T7">
-            <p>Work on header title layout</p>
-          </li>
-          <li id="myOBGlTaX">
-            <p>Add burger dropdown menu</p>
-          </li>
-          <li id="mkHUMlaTQ">
-            <p>Remove "subscribe"</p>
-          </li>
-          <li id="XkXDMgapm">
-            <p>Create a footer, with social icons</p>
+            <p>Work on header title layout.</p>
           </li>
         </ul>
       </li>
       <li id="Q1lz2MLnm">
-        <p><b><i>BLOG</i></b> --- #waiting</p>
+        <p><i><b>BLOG</b></i> --- #waiting</p>
+      </li>
+      <li id="XyWi7ga6X">
+        <p>Design the header of a blog post, h1, h2, date.</p>
       </li>
       <li id="Qyhb2zI3m">
-        <p><b><i>ABOUT </i></b><i>--- #active</i></p>
+        <p><i><b>ABOUT </b>--- #active</i></p>
+      </li>
+      <li id="Xkw9me6TQ">
+        <p>Add photo of myself.</p>
       </li>
       <li id="QkfMnfI2Q">
-        <p><b><i>UI </i></b><i>--- #active</i></p>
+        <p><i><b>UI </b>--- #active</i></p>
+        <ul>
+          <li id="mJYPQeaaX">
+            <p>Find a body copy font.</p>
+          </li>
+          <li id="myOBGlTaX">
+            <p>Add burger dropdown menu.</p>
+          </li>
+          <li id="mkHUMlaTQ">
+            <p>Remove "subscribe".</p>
+          </li>
+          <li id="XkXDMgapm">
+            <p>Create a footer, with social icons.</p>
+          </li>
+        </ul>
       </li>
       <li id="m1SG3fLnQ">
         <p><b><i>RESUME </i></b><i>--- #waiting</i></p>

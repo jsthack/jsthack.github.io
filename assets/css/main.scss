@@ -3,29 +3,131 @@
 # Change this file for any custom CSS.
 ---
 
-// Import partials from `sass_dir` (defaults to `_sass`)
+//   ______     ______     ______     __    __     __     __   __
+//  /\  ___\   /\  __ \   /\  ___\   /\ "-./  \   /\ \   /\ "-.\ \
+//  \ \ \____  \ \ \/\ \  \ \___  \  \ \ \-./\ \  \ \ \  \ \ \-.  \
+//   \ \_____\  \ \_____\  \/\_____\  \ \_\ \ \_\  \ \_\  \ \_\\"\_\
+//    \/_____/   \/_____/   \/_____/   \/_/  \/_/   \/_/   \/_/ \/_/
+//
+//===================================================================
+//			Title: JstHack Blog / Main Sass
+//			Description: Theme css overrides for my personal blog.
+//       Date: 06.21.17
+//       Version: #
+//       Author: Cosmin Haims
+//       Author URL: http://cosminhaims.com
+//===================================================================
+
+
+//==========================
 @import "syntax";
 @import "variables";
+@import "menu";
+//==========================
 
 /* We need to add display:inline in order to align the '>>' of the 'read more' link */
 .post-excerpt p {
 	display:inline;
 }
 
+//==================================================
+// 2. NAVIGATION
+//==================================================
+
+//==================================================
+// 3. HEADER
+//==================================================
+.inner {
+	padding-bottom: 10px;
+}
+
 .no-cover.main-header {
 	//background: -webkit-linear-gradient(271deg, #DD72FF 0%, #93F4FF 100%);
    //background: -o-linear-gradient(271deg, #DD72FF 0%, #93F4FF 100%);
    //background: linear-gradient(-180deg, #DD72FF 0%, #93F4FF 100%);
-	background-color: $gPurpleDark2;
+	//background: -webkit-linear-gradient(271deg, #FF69C1 0%, #9E6EFF 100%);
+   //background: -o-linear-gradient(271deg, #FF69C1 0%, #9E6EFF 100%);
+	//background: linear-gradient(-1deg, #FF69C1 0%, #9E6EFF 100%);
+	//background: -webkit-linear-gradient(271deg, #70F7FF 0%, #A346FF 100%);
+   //background: -o-linear-gradient(271deg, #70F7FF 0%, #A346FF 100%);
+	//background: linear-gradient(-1deg, #70F7FF 0%, #A346FF 100%);
+	//background-color: $gPurpleDark2;
+	background-color: $gPurpleDark3;
 }
 
-.no-cover{
-	.page-title{
+.no-cover {
+	.page-title {
 		color: white;
-		font-size: 63px;
+		font-size: 72px;
 	}
 
 	.page-description {
 		color: white;
+		font-size: 23.5px;
+	}
+}
+
+.no-cover.main-header {
+	min-height: 160px;
+	max-height: 32%;
+}
+
+.main-header {
+	.inner {
+		width: 100%;
+	}
+}
+
+//==================================================
+// 4. POSTS
+//==================================================
+
+.post {
+	padding: 20px 26px 26px 26px;
+	box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.1);
+	margin: 3rem auto;
+}
+
+.post-content {
+	.full-img {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+//==================================================
+// 5. MEDIA QUERIES
+//==================================================
+
+@media only screen and (max-width: 900px) {
+	.no-cover.main-header {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.main-header {
+		.inner {
+			width: 100%
+		}
+	}
+	.no-cover {
+		.page-title {
+			font-size: 65px;
+		}
+		.page-description {
+			font-size: 21.3px;
+		}
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.no-cover {
+		.page-title {
+			font-size: 55px;
+		}
+		.page-description {
+			font-size: 17.9px;
+		}
 	}
 }

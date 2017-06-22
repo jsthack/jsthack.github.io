@@ -1,8 +1,9 @@
 ---
 layout: post
+author: Cosmin Haims
 title:  "Git Team Workflow"
 date:   2017-06-20 10:18:00
-categories: Web development
+categories: Git Workflow
 ---
 
 <p>I'm assuming if your reading this blog post you use Git, or are atleast familiar with it. There is no self respecting developer or engineering team out there who isn't using git in their workflow. As you know I'm not a traditional front-end developer, I didn't get a computer science degree, and most of my dev skill sets has been self taught. If your a designer who doesn't use Git, all I can say is <b>Version Control is Non Negotiable.</b></p>

@@ -728,6 +728,7 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
+/*
 .post:after {
     display: block;
     content: "";
@@ -744,7 +745,7 @@ margin on the iframe, cause it breaks stuff. */
     border-radius: 100%;
     box-shadow: #FFF 0 0 0 5px;
 }
-
+*/
 body:not(.post-template) .post-title {
     font-size: 3.6rem;
 }

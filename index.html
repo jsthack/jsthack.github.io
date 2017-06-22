@@ -1,5 +1,6 @@
 ---
 layout: default
+author: Cosmin Haims
 title: Home
 cover: false
 about: 'about.html'
@@ -44,12 +45,12 @@ about: 'about.html'
             {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">&raquo;</a>
         </section>
         <footer class="post-meta">
-            {% if site.author %}
-                <img class="author-thumb" src="/assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
-                {{ site.author }}
+               {% if site.author %}
+               <img class="author-thumb" src="/assets/images/cos-logo.png" alt="Author's profile picture" nopin="nopin" />
+               {{ site.author }}<span> / </span>
             {% endif %}
             {% if post.categories.size > 0 %}
-                {{ post.categories | array_to_sentence_string | prepend: 'on ' }}
+               {{ post.categories}}
             {% endif %}
             <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
                 {{ post.date | date_to_string }}

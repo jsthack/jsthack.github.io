@@ -1,0 +1,116 @@
+/*Colors*/
+$white:      #fff;
+$bkg:        #493458;
+/*Fonts*/
+
+/*MIXINS*/
+#noMargin{
+  margin:   0px;
+  padding:  0px;
+}
+#lineStyle{
+  background-color: $white;
+  width:24px;
+  height:2px;
+}
+
+/*----- GENERAL -*/
+
+ul,li{
+
+  list-style:none;
+}
+
+/*-----------------------------------------------
+MOBILE
+Content of mobile menu
+-----------------------------------------------*/
+.mobile{
+  padding:40px;
+}
+
+/*-----------------------------------------------
+LABEL
+-----------------------------------------------*/
+.mobile__label{
+  border:solid 2px white;
+  display:inline-block;
+  overflow:hidden;
+  padding:12px 9px;
+  width:25px;
+  white-space: nowrap;
+  &:hover{
+    cursor:pointer;
+    /*ANIMAION POSITION ON HOVER*/
+    .label__line{
+      margin-left:0px;
+    }
+    /*ANIMATION DELAY*/
+    :nth-child(2){
+      .label__line{
+        transition-delay:.1s;
+      }
+    }
+    :nth-child(3){
+      .label__line{
+        transition-delay:.2s;
+      }
+    }
+  }
+}
+  /*LINES CONTENT*/
+  .mobile__label__content{
+    font-size: 0;
+    line-height: 0;
+    height: 2px;
+    margin-bottom: 5px;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+  }
+  /*WHITE LINES*/
+  .label__line{
+    display:inline-block;
+    margin-left: -33px;
+    margin-right: 43px;
+    /*LINES ANIMATION*/
+    transition: margin-left .2s linear;
+  }
+
+/*-----------------------------------------------
+INPUT
+-----------------------------------------------*/
+.mobile__input{
+    display:none;
+}
+
+/*-----------------------------------------------
+NAV
+-----------------------------------------------*/
+.mobile__nav{
+  margin-top: 10px;
+  max-height:0;
+  max-width:0;
+  overflow: hidden;
+  transition: max-height 1s linear, max-width .8s linear;
+}
+  .nav__item{
+    white-space: nowrap;
+    a{
+      text-decoration:none;
+      display:block;
+      padding: 5px 0px;
+      color:$white;
+      &:after{
+        display:block;
+        width:15px;
+        height:2px;
+        background-color:$white;
+        content:'';
+      }
+    }
+  }
+.mobile__input:checked+.mobile__nav{
+  max-width:150px;
+  max-height:200px;
+}
