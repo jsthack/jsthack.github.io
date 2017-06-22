@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Cosmin Haims
-title:  "Welcome to JstHack"
+title:  "01 / Welcome to JstHack"
 date:   2017-06-18 10:18:00
 categories: Personal
 ---

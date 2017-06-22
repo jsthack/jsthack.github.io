@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Cosmin Haims
-title:  "Git Team Workflow"
+title:  "02 / Git Team Workflow"
 date:   2017-06-20 10:18:00
 categories: Git Workflow
 ---
