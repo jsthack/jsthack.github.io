@@ -37,6 +37,15 @@
    margin: 21px 0px 45px 21px;
    text-align: left;
 }
+.nav__item {
+	a {
+		transition: none;
+	}
+	a:hover {
+		color: $postHeader;
+		font-weight: 600;
+   }
+}
 //==================================================
 // 3. HEADER ---------------------------------------
 //==================================================
@@ -55,10 +64,10 @@
 	//background: -webkit-linear-gradient(271deg, #FF69C1 0%, #9E6EFF 100%);
    //background: -o-linear-gradient(271deg, #FF69C1 0%, #9E6EFF 100%);
 	//background: linear-gradient(-1deg, #FF69C1 0%, #9E6EFF 100%);
-	//background: -webkit-linear-gradient(271deg, #70F7FF 0%, #A346FF 100%);
-   //background: -o-linear-gradient(271deg, #70F7FF 0%, #A346FF 100%);
-	//background: linear-gradient(-1deg, #70F7FF 0%, #A346FF 100%);
-	background-color: $gPurpleDark2;
+	background: -webkit-linear-gradient(271deg, #A44FFF 0%, #3db9ff 100%);
+   background: -o-linear-gradient(271deg, #A44FFF 0%, #3db9ff 100%);
+	background: linear-gradient(-1deg, #A44FFF 0%, #3db9ff 100%);
+		//background-color: $gPurpleDark2;
 	//background-color: $gPurpleDark3;
 }
 
@@ -94,6 +103,10 @@
 //==================================================
 // 4. POSTS ----------------------------------------
 //==================================================
+
+.post-title a:hover {
+	color: $gPurpleDark1;
+}
 
 .post {
 	padding: 20px 26px 26px 26px;
