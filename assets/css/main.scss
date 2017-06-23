@@ -30,6 +30,10 @@
 	display:inline;
 }
 
+a:hover {
+	color: $gPurpleDark1;
+}
+
 //==================================================
 // 2. NAVIGATION -----------------------------------
 //==================================================
@@ -130,7 +134,7 @@
 .aboutContainer {
    width: 850px;
    margin: auto;
-	padding: 26px 33px 33px 33px;
+	padding: 26px 33px 26px 33px;
    box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -142,6 +146,7 @@
 	.post-content{
 		font-size: 23px;
 		line-height: 35px;
+		padding-bottom: 29px;
 	}
 }
 

@@ -6,7 +6,7 @@ date:   2017-06-20 10:18:00
 categories: Git Workflow
 ---
 
-<p>I'm assuming if your reading this blog post you use Git, or are atleast familiar with it. There is no self respecting developer or engineering team out there who isn't using git in their workflow. As you know I'm not a traditional front-end developer, I didn't get a computer science degree, and most of my dev skill sets has been self taught. If your a designer who doesn't use Git, all I can say is <b>Version Control is Non Negotiable.</b></p>
+<p>I'm assuming if your reading this blog post you use Git, or are atleast familiar with it. There is no self respecting developer or engineering team out there who isn't using git in their workflow. As you know I'm not a traditional front-end developer, I didn't get a computer science degree, and most of my dev skill sets has been self taught. If your a designer who doesn't use Git, all I can say is <span style="color: #9638ff"><b>Version Control is Non Negotiable.</b></span></p>
 
 <h5>Quick Overview of Git</h5>
 <p>'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.' It was designed by Linus Torvalds, the creator of the Linux Operating System Kernal. You would be blown away by the number of software projects, that rely on Git. Git is a DVCS System (Distributed Version Control System). Instead of having your full version control history in a single place, like many older VCS (CVS/Subversion). With Git everyones working copy of the code base, is also a repository that can keep the full history of all global changes. Git was also designed with performance, security and flexibility in mind.</p>
