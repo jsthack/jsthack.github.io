@@ -26,7 +26,7 @@ about: 'about.html'
       <input class="mobile__input" type="checkbox" id="checkbox" />
       <nav class="mobile__nav">
          <ul>
-            <li class="nav__item"><a href="https://jsthack.github.io">Home</a></li>
+            <li class="nav__item"><a href='{{ site.baseurl }}{{ page.about }}'>Home</a></li>
             <li class="nav__item"><a href="about.html">About</a></li>
             <li class="nav__item"><a href="#">Experience</a></li>
             <li class="nav__item"><a href="#">Contact</a></li>
@@ -36,7 +36,7 @@ about: 'about.html'
 <!--========================================================================= -->
    <div class="vertical">
       <div class="main-header-content inner">
-         <h1 class="page-title">{{ site.name }}</h1>
+         <a href='{{ site.baseurl }}'><h1 class="page-title">{{ site.name }}</h1></a>
          <h2 class="page-description">
             {% if site.description %} {{ site.description }} {% endif %}
             {% if page.about %}</br><!--<a href='{{ site.baseurl }}{{ page.about }}'><span style="color: #2f2f2f;"><b>About me</b></span></a>--> {% endif %}
