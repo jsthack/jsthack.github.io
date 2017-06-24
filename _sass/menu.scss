@@ -8,7 +8,7 @@ $bkg: #493458;
    padding: 0;
 }
 @mixin lineStyle {
-   background-color: $white;
+   background-color: $aqua;
    width: 24px;
    height: 2px;
 }
@@ -110,7 +110,7 @@ NAV
          display: block;
          width: 15px;
          height: 2px;
-         background-color: $white;
+         background-color: $aqua;
          content: '';
       }
    }
