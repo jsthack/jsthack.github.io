@@ -125,6 +125,12 @@ a:hover {
 		width: 100%;
 		margin: 0;
 	}
+	p {
+		margin-top: 1em;
+	}
+	h3, h3, h4, h5 {
+		color: $postHeader;
+	}
 }
 
 //==================================================
@@ -151,7 +157,7 @@ a:hover {
 }
 
 //==================================================
-// 6. MEDIA QUERIES --------------------------------
+// 6. MEDIA QUERIES / SMALLER THAN 1000 px ---------
 //==================================================
 
 @media only screen and (max-width: 1000px) {
@@ -164,11 +170,19 @@ a:hover {
 	margin: 10px 0 13px 0;
 }
 
+//==================================================
+// 7. MEDIA QUERIES / SMALLER THAN 900 px ----------
+//==================================================
+
 @media only screen and (max-width: 900px) {
 	.no-cover.main-header {
 		padding: 0;
 	}
 }
+
+//==================================================
+// 8. MEDIA QUERIES / SMALLER THAN 550 px ----------
+//==================================================
 
 @media only screen and (max-width: 550px) {
 	.main-header {
@@ -204,6 +218,10 @@ a:hover {
 	}
 }
 
+//==================================================
+// 8. MEDIA QUERIES / SMALLER THAN 460 px ----------
+//==================================================
+
 @media only screen and (max-width: 460px) {
 	.vertical {
    	display: table-row-group;
@@ -238,6 +256,10 @@ a:hover {
 		padding: 18px 16px 18px 21px;
 	}
 }
+
+//==================================================
+// 8. MEDIA QUERIES / SMALLER THAN 380 px ----------
+//==================================================
 
 @media only screen and (max-width: 380px) {
 	.no-cover {
