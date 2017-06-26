@@ -25,6 +25,33 @@
 @import "menu";
 //==========================
 
+//===================================================
+@font-face {
+    font-family: 'fira_monobold';
+    src: url('../fonts/fira_mono/firamono-bold-webfont.woff2') format('woff2'),
+         url('../fonts/fira_mono/firamono-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'fira_monomedium';
+    src: url('../fonts/fira_mono/firamono-medium-webfont.woff2') format('woff2'),
+         url('../fonts/fira_mono/firamono-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'fira_monoregular';
+    src: url('../fonts/fira_mono/firamono-regular-webfont.woff2') format('woff2'),
+         url('../fonts/fira_mono/firamono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+//===================================================
+
 /* We need to add display:inline in order to align the '>>' of the 'read more' link */
 .post-excerpt p {
 	display:inline;
@@ -34,6 +61,14 @@ a:hover {
 	color: $gPurpleDark1;
 }
 
+p {
+	font-family: firamono-regular, monospace;
+	line-height: 29px;
+}
+
+section {
+	font-family: firamono-regular, monospace;
+}
 //==================================================
 // 2. NAVIGATION -----------------------------------
 //==================================================
