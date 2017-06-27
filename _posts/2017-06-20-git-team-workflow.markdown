@@ -5,7 +5,7 @@ title:  "02 / Git Team Workflow"
 date:   2017-06-20 10:18:00
 categories: Git Workflow
 ---
-I'm assuming if your reading this blog post you use Git, or are atleast familiar with it. There is no self respecting developer or engineering team out there who isn't using git in their workflow. As you know I'm not a traditional front-end developer, I didn't get a computer science degree, and most of my dev skill sets has been self taught. If your a designer who doesn't use Git, all I can say is <span style="color: #9638ff"><b>Version Control is Non Negotiable.</b></span>
+I'm assuming if your reading this blog post you use Git, or are atleast familiar with it. There is no self respecting developer or engineering team out there who isn't using git in their workflow. As you know I'm not a traditional front-end developer, I didn't get a computer science degree, and most of my dev skill sets has been self taught. If your a designer who doesn't use Git, all I can say is <span style="color: #7d45bb"><b>Version Control is Non Negotiable.</b></span>
 
 ![flow](/assets/images/gitflow/gitflow1.png){:height="100%" width="100%"}
 
