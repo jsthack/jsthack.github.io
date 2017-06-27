@@ -15,19 +15,39 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     <!-- Customisation  -->
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <script src="https://use.fontawesome.com/3d400cd0a9.js"></script>
 
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
 
     {{ content }}
-    <footer class="site-footer clearfix">
+    <footer class="site-footer">
+      <div class="footerContent">
+      <div class="socialIcons">
+         <a href="https://github.com/jsthack"></a>
+         <a href="https://dribbble.com/CosminH"></a>
+         <a href="https://codepen.io/jsthack/"></a>
+         <a href="https://www.facebook.com/cosmin.haims.1"></a>
+         <a href="https://twitter.com/Cosmin_Haims"></a>
+         <a href="https://www.linkedin.com/in/chaims/"></a>
+      </div>
+         <section class = "reserved">
+            <a href="{{ site.baseurl }}">JstHack ©</a>
+             • All Rights Reserved // Made With Jekyll Using a Port of
+                <a href="http://github.com/jsthack/jsthack.github.io">Kasper</a>
+                Theme
+         </section>
+      </div>
+<!--
       <section class="copyright">
         <a href="{{ site.baseurl }}">{{ site.name }}</a> &copy;
-              {{ page.date | date: "%m/%d/%Y" }} &bull; All rights reserved.
+        {{ page.date | date: "%m/%d/%Y" }} &bull; All rights reserved.
       </section>
+
       <section class="poweredby">Made with Jekyll using
         <a href="http://github.com/jsthack/jsthack.github.io">a Port of Kasper Theme</a>
       </section>
+-->
     </footer>
 
     <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>

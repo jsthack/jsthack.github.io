@@ -18,40 +18,14 @@
 //       Author URL: http://cosminhaims.com
 //===================================================================
 
-
-//==========================
 @import "syntax";
 @import "variables";
 @import "menu";
-//==========================
+@import "fonts_icons";
 
-//===================================================
-@font-face {
-    font-family: 'fira_monobold';
-    src: url('../fonts/fira_mono/firamono-bold-webfont.woff2') format('woff2'),
-         url('../fonts/fira_mono/firamono-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'fira_monomedium';
-    src: url('../fonts/fira_mono/firamono-medium-webfont.woff2') format('woff2'),
-         url('../fonts/fira_mono/firamono-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'fira_monoregular';
-    src: url('../fonts/fira_mono/firamono-regular-webfont.woff2') format('woff2'),
-         url('../fonts/fira_mono/firamono-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-//===================================================
-
+//==================================================
+// 2. BASE STYLES ----------------------------------
+//==================================================
 /* We need to add display:inline in order to align the '>>' of the 'read more' link */
 .post-excerpt p {
 	display:inline;
@@ -59,15 +33,6 @@
 
 a:hover {
 	color: $gPurpleDark1;
-}
-
-p {
-	font-family: firamono-regular, monospace;
-	line-height: 29px;
-}
-
-section {
-	font-family: firamono-regular, monospace;
 }
 //==================================================
 // 2. NAVIGATION -----------------------------------
@@ -188,6 +153,71 @@ section {
 		font-size: 23px;
 		line-height: 35px;
 		padding-bottom: 29px;
+	}
+}
+
+//==================================================
+// 5. FOOTER ---------------------------------------
+//==================================================
+
+.site-footer {
+	margin: 0 auto;
+   padding: 2.5rem 15px;
+	text-align: center;
+}
+
+.footerContent {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.reserved {
+	font-size: 15px;
+	text-align: center;
+}
+
+.madeWith {
+	font-size: 15px;
+}
+
+.socialIcons{
+	width: 50%;
+	margin: auto;
+	a {
+	  color: #3b3c41;
+	  text-align:center;
+	  text-decoration:none;
+	  font-family:fontawesome;
+	  font-size: 23px;
+	  padding: 0px 18px 0 0;
+	  -o-transition:all .5s;
+	  -webkit-transition: all .5s;
+	  -moz-transition: all .5s;
+	  transition: all .5s;
+	   -webkit-font-smoothing: antialiased;
+	}
+
+	a:hover {
+	  color: $gPurpleDark1;
+	}
+
+	a:nth-of-type(1):before {
+	content:'\f113';
+	}
+	a:nth-of-type(2):before {
+	content:'\f17d';
+	}
+	a:nth-of-type(3):before {
+	content:'\f1cb';
+	}
+	a:nth-of-type(4):before {
+	content:'\f09a';
+	}
+	a:nth-of-type(5):before {
+	content:'\f099';
+	}
+	a:nth-of-type(6):before {
+	content:'\f08c';
 	}
 }
 
