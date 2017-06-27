@@ -36,6 +36,10 @@ a:hover {
 	color: $gPurpleDark1;
 }
 
+body, p, h1, h2, h3, h4, h5, h6, a, li, ul {
+	hyphens: none;
+}
+
 //==================================================
 // 2. NAVIGATION -----------------------------------
 //==================================================
@@ -167,7 +171,7 @@ a:hover {
 
 .site-footer {
 	margin: 0 auto;
-   padding: 2.5rem 15px;
+   padding: 1.5rem 15px;
 	text-align: center;
 	line-height: 4.75em;
 }
