@@ -26,7 +26,8 @@
 //==================================================
 // 2. BASE STYLES ----------------------------------
 //==================================================
-/* We need to add display:inline in order to align the '>>' of the 'read more' link */
+// We need to add display:inline in order to align the '>>' of the 'read more' link
+
 .post-excerpt p {
 	display:inline;
 }
@@ -34,9 +35,11 @@
 a:hover {
 	color: $gPurpleDark1;
 }
+
 //==================================================
 // 2. NAVIGATION -----------------------------------
 //==================================================
+
 .mobile {
    margin: 21px 0px 45px 21px;
    text-align: left;
@@ -50,9 +53,11 @@ a:hover {
 		font-weight: 600;
    }
 }
+
 //==================================================
 // 3. HEADER ---------------------------------------
 //==================================================
+
 .main-header {
 	text-align: inherit;
 }
@@ -164,10 +169,11 @@ a:hover {
 	margin: 0 auto;
    padding: 2.5rem 15px;
 	text-align: center;
+	line-height: 4.75em;
 }
 
 .footerContent {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -181,7 +187,7 @@ a:hover {
 }
 
 .socialIcons{
-	width: 50%;
+	width: 100%;
 	margin: auto;
 	a {
 	  color: #3b3c41;
@@ -242,6 +248,28 @@ a:hover {
 @media only screen and (max-width: 900px) {
 	.no-cover.main-header {
 		padding: 0;
+	}
+}
+
+//==================================================
+// 8. MEDIA QUERIES / SMALLER THAN 670 px ----------
+//==================================================
+
+@media only screen and (max-width: 670px) {
+	.reserved {
+		font-size: 13px;
+	}
+}
+
+//==================================================
+// 8. MEDIA QUERIES / SMALLER THAN 600 px ----------
+//==================================================
+
+@media only screen and (max-width: 600px) {
+	.reserved {
+		width: 326px;
+		margin: 0 auto;
+		line-height: 22px;
 	}
 }
 
@@ -357,5 +385,9 @@ a:hover {
 			font-size: 18px;
 			line-height: 29px;
 		}
+	}
+	.reserved {
+		font-size: 12px;
+    	line-height: 22px;
 	}
 }
