@@ -1,7 +1,7 @@
 name: JstHack
 author: Cosmin Haims
 description: UI & UX | Product Design | Front-End Dev
-meta_description: "Cosmin Haims's personal blog about product design, ui, user experience, and fron-end development. "
+meta_description: "Personal Blog, Product Design, User Experience, User Interface Design, Ui, Ux, Graphic Design, Front-End development, git, github, node.js, css, html, css tutorial, javascript, Front-End tutorial, deign blog"
 
 
 markdown: kramdown
@@ -10,7 +10,7 @@ logo: true
 paginate: 15
 baseurl: /
 domain_name: 'http://jsthack.github.io'
-google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-102062590-1'
 plugins: [jekyll-paginate]
 
 # Details for the RSS feed generator

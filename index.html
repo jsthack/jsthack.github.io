@@ -22,7 +22,8 @@ about: 'index.html'
             <span class="label__line"></span>
             <span class="label__line"></span>
          </div>
-      </label><!--mobile__label-->
+      </label>
+      <!--mobile__label-->
       <input class="mobile__input" type="checkbox" id="checkbox" />
       <nav class="mobile__nav">
          <ul>
@@ -31,10 +32,11 @@ about: 'index.html'
             <li class="nav__item"><a href="#">Experience</a></li>
             <li class="nav__item"><a href="#">Contact</a></li>
          </ul>
-      </nav><!--mobile__nav-->
-   </div><!--mobile-->
+      </nav>
+   </div>
+   <!--mobile-->
    <!-- ===================================================================== -->
-      <!--
+   <!--
       <nav class="main-nav overlay clearfix">
          {% if page.logo %}
             <a class="blog-logo" href="{{ site.baseurl }}">
@@ -45,50 +47,38 @@ about: 'index.html'
       </nav>
       -->
    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description">
+      <div class="main-header-content inner">
+         <h1 class="page-title">{{ site.name }}</h1>
+         <h2 class="page-description">
                 {% if site.description %} {{ site.description }} {% endif %}
                 {% if page.about %}</br><!--<a href='{{ site.baseurl }}{{ page.about }}'><span style="color: #2f2f2f;"><b>About me</b></span></a>--> {% endif %}
             </h2>
-        </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+      </div>
+   </div>
+   <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
-
 
 <main id="content" class="content" role="main">
 
+   <div class="extra-pagination inner">
+      {% include pagination.html %}
+   </div>
 
-    <div class="extra-pagination inner">
-        {% include pagination.html %}
-    </div>
-
-    {% for post in paginator.posts %}
-
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        </header>
-        <section class="post-excerpt">
-            {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">&raquo;</a>
-        </section>
-        <footer class="post-meta">
-               {% if site.author %}
-               <img class="author-thumb" src="/assets/images/cos-logo.png" alt="Author's profile picture" nopin="nopin" />
-               {{ site.author }}<span> / </span>
-            {% endif %}
-            {% if post.categories.size > 0 %}
-               {{ post.categories}}
-            {% endif %}
-            <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
-                {{ post.date | date_to_string }}
-            </time>
-        </footer>
-    </article>
-
-    {% endfor %}
-
-    {% include pagination.html %}
-
+   {% for post in paginator.posts %}
+   <article class="post">
+      <header class="post-header">
+         <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      </header>
+      <section class="post-excerpt">
+         {{ post.excerpt }} <a class="read-more" href="{{ post.url }}">&raquo;</a>
+      </section>
+      <footer class="post-meta">
+         {% if site.author %}
+         <img class="author-thumb" src="/assets/images/cos-logo.png" alt="Author's profile picture" nopin="nopin" /> {{ site.author }}<span> / </span> {% endif %} {% if post.categories.size > 0 %} {{ post.categories}} {% endif %}
+         <time class="post-date" datetime="{{ post.date | date:" %Y-%m-%d " }}">
+         {{ post.date | date_to_string }}
+         </time>
+      </footer>
+   </article>
+   {% endfor %} {% include pagination.html %}
 </main>
