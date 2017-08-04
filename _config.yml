@@ -13,6 +13,9 @@ domain_name: 'http://jsthack.github.io'
 google_analytics: 'UA-102062590-1'
 plugins: [jekyll-paginate]
 
+#gems:
+#   - jekyll-seo-tag
+
 # Details for the RSS feed generator
 url:            'blog url'
 author:         'Cosmin Haims'
